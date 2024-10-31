@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="examSelection">
+        <h2>Select Your Exam</h2>
+        <div id="examButtons"></div>
+    </div>
+
+    <div id="examDescription" style="display: none;">
+        <h2 id="examTitle">Exam Title</h2>
+        <p id="examDuration">Duration: 1 hour</p>
+        <p id="examQuestions">Number of Questions: 30</p>
+        <button onclick="proceedToTest()">Proceed to Test</button>
+    </div>
+
+    <div id="examPage" style="display: none;">
+        <div id="examPanel">
+            <div id="questionSection">
+                <h2 id="questionText"></h2>
+                <p id="questionType"></p>
+                <div id="options"></div>
+                <button onclick="submitAndNext()">Submit and Next</button>
+            </div>
+            <div id="controls">
+                <div id="timer">60:00</div>
+                <div id="navigation">
+                    <p>Question Navigation</p>
+                    <div id="questionButtons"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultPage" style="display: none;">
+        <h2>Exam Results</h2>
+        <p id="resultText"></p>
+        <div id="detailedResult"></div>
+        <button onclick="restartExam()">Proceed to Test Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
