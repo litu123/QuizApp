@@ -9,6 +9,7 @@
 /* Body styling */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -16,7 +17,15 @@ body {
     overflow: auto;
     padding: 20px;
 }
-
+.header{
+    position: relative;
+    top: -100px;
+    background: linear-gradient(45deg,red,yellow);
+    padding: 10px;
+    border-radius: 15px;
+    
+    
+}
 /* Main container for each section */
 #examSelection, #examDescription, #examPage, #resultPage {
     width: 80%;
