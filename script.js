@@ -1,5 +1,5 @@
 let exams = {
-    sampleExam: [
+    process: [
         {
             question: "Availability of services in the contract generally refers to",
             options: ["Infrastructure and Application", "Infrastructure only", "Application only", "Database Only"],
@@ -286,7 +286,7 @@ let exams = {
             type: "single"
         }
     ],
-    geographyExam: [
+    articulation: [
         {
             question: "Which country is known as the Land of the Rising Sun?",
             options: ["Japan", "China", "Thailand", "India"],
