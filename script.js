@@ -331,6 +331,7 @@ function selectExam(examKey) {
 
 function proceedToTest() {
     document.getElementById("examDescription").style.display = "none";
+    document.getElementById("name").style.display = "none";
     document.getElementById("examPage").style.display = "flex";
     startTimer();
     loadQuestion(0);
