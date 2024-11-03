@@ -17,15 +17,15 @@ body {
     overflow: auto;
     padding: 20px;
 }
-.header{
+
+.header {
     position: relative;
     top: -100px;
-    background: linear-gradient(45deg,red,yellow);
+    background: linear-gradient(45deg, red, yellow);
     padding: 10px;
     border-radius: 15px;
-    
-    
 }
+
 /* Main container for each section */
 #examSelection, #examDescription, #examPage, #resultPage {
     width: 80%;
@@ -56,7 +56,7 @@ button {
     font-size: 1em;
     transition: background-color 0.3s;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
 }
 
 button:hover {
@@ -201,6 +201,25 @@ button:hover {
 @media (max-width: 768px) {
     #examPanel {
         flex-direction: column;
+        overflow-y: auto;
+        max-height: 100vh; /* Maximize height for mobile */
+        width: 100%; /* Full width on mobile */
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 0; /* Remove bottom margin */
+        padding: 0; /* Remove padding */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+
+    #examPage, #resultPage {
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+    /* Hide scrollbar for WebKit browsers */
+    #examPanel::-webkit-scrollbar {
+        display: none;
     }
 
     #questionSection, #controls {
